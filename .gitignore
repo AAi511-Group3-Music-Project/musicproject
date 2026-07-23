@@ -1,0 +1,12 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+env/
+
+# Keep the dataset (data/) and extracted features (features/) committed —
+# they are small and make the notebook run for teammates with no extra downloads.

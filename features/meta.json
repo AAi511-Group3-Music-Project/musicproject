@@ -1,0 +1,26 @@
+{
+  "seq_len": 100,
+  "vocab_size": 502,
+  "n_pitches": 88,
+  "pitch_lo": 21,
+  "pitch_hi": 108,
+  "roll_w": 96,
+  "fs": 6,
+  "composers": [
+    "bach",
+    "bartok",
+    "byrd",
+    "chopin",
+    "handel",
+    "hummel",
+    "mendelssohn",
+    "mozart",
+    "schumann"
+  ],
+  "aug_shifts": [
+    -2,
+    -1,
+    1,
+    2
+  ]
+}
