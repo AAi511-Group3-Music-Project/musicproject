@@ -8,5 +8,10 @@ __pycache__/
 .venv/
 env/
 
+# Local Kaggle archive, extracted files, and trained model outputs
+Dataset.zip
+data/midi_classic_music/
+*.keras
+
 # Keep the dataset (data/) and extracted features (features/) committed —
 # they are small and make the notebook run for teammates with no extra downloads.

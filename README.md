@@ -1,26 +1,27 @@
 # Composer Classification Using LSTM and CNN
 
-Identify the composer of a musical score using deep learning, for nine classical composers:
-Bach, Bartók, Byrd, Chopin, Handel, Hummel, Mendelssohn, Mozart, and Schumann.
+Identify the composer of a musical score using deep learning for four classical composers:
+Bach, Beethoven, Chopin, and Mozart.
 
 All work lives in a single shared notebook, **`project_notebook.ipynb`**. The data-handling
 stages (data collection, exploration, pre-processing, augmentation, feature extraction, and
-model-input preparation) are complete; the LSTM and CNN modeling sections that follow are still
-to be built.
+model-input preparation) are complete. The notebook now includes the LSTM and CNN model-building
+and training sections.
 
 ## Repository layout
 
 ```
 musicproject/
-├── project_notebook.ipynb              # the shared project notebook
-├── data/NN_midi_files_extended/…       # dataset: 439 MIDI files (train / dev / test)
-├── features/…                          # extracted, model-ready arrays (sequences + piano-rolls)
+├── project_notebook.ipynb       # shared project notebook
+├── Dataset.zip                  # Kaggle midi_classic_music dataset
+├── features/                    # model-ready sequences and piano-rolls
 ├── requirements.txt
 └── README.md
 ```
 
-The dataset and the extracted features are committed to the repository, so the notebook runs with
-no manual downloads.
+Place the Kaggle `midi_classic_music` archive in the project root as `Dataset.zip`. The notebook
+extracts the four selected composers, creates the data splits, regenerates the features, and then
+trains simple LSTM and CNN models.
 
 ## Run it in Google Colab
 
@@ -29,8 +30,7 @@ no manual downloads.
 3. Paste `AAi511-Group3-Music-Project/musicproject` and select **`project_notebook.ipynb`**.
 4. **Runtime → Run all.**
 
-The notebook installs the required libraries and automatically clones this repository (dataset and
-features included) into the Colab session, so everything runs without any manual setup.
+Upload `Dataset.zip` beside the notebook in the Colab session before selecting **Runtime → Run all**.
 
 To save changes back to the repository from Colab: **File → Save a copy in GitHub → musicproject**.
 

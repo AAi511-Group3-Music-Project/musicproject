@@ -8,14 +8,9 @@
   "fs": 6,
   "composers": [
     "bach",
-    "bartok",
-    "byrd",
+    "beethoven",
     "chopin",
-    "handel",
-    "hummel",
-    "mendelssohn",
-    "mozart",
-    "schumann"
+    "mozart"
   ],
   "aug_shifts": [
     -2,
